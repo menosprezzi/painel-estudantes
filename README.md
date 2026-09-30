@@ -47,7 +47,7 @@ O campo `nome` é como você escolhe ser apresentado publicamente. Não precisa 
 7. Abra um PR para `main`, vincule-o à sua issue e peça à sua dupla para revisar. Cada estudante abre seu próprio PR e também revisa o PR da dupla.
 8. Depois da aprovação, o PR pode ser mesclado à `main`.
 
-Consulte o Git Cheat-sheet pela barra superior do site (rota `/git-cheatsheet/`) para os exemplos de `git clone`, `git add -A`, `git commit -m`, `git pull` e `git push`. Siga a orientação do facilitador para a URL do repositório e a abertura da issue.
+Consulte o Git Cheat-sheet pela barra superior do site (rota `/git-cheatsheet/`) para os exemplos de `git clone`, `git branch`, `git add -A`, `git commit -m`, `git pull` e `git push`. Siga a orientação do facilitador para a URL do repositório e a abertura da issue.
 
 **Sua atividade individual termina quando seu PR é aprovado e mesclado à `main`.** A publicação do site pode levar mais tempo; você não precisa esperar pelo deploy. Os cards publicados podem ser vistos em conjunto no encerramento.
 

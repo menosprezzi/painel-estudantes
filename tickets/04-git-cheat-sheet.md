@@ -4,7 +4,7 @@
 
 **Blocked by:** 01 — Inicializar o repositório local e servir a página inicial; 03 — Aplicar a identidade Stribord aos cards responsivos, que estabelece a apresentação compartilhada da barra e do conteúdo.
 
-**Status:** implemented-unverified (commit local `c1054c0`)
+**Status:** implemented-unverified (commits locais `c1054c0` e `4120339`; extensão solicitada depois)
 
 **Modelo recomendado:** `gpt-6.1-sol`, reasoning `medium` — a tarefa combina conteúdo técnico preciso com uma segunda rota e reutilização do visual existente.
 
@@ -15,6 +15,6 @@
 **Critérios de aceitação:**
 
 - [ ] A geração estática produz a página Git Cheat-sheet; ela e a inicial exibem a mesma barra superior com apenas **Estudantes** e **Git Cheat-sheet**, e cada link leva à página correspondente mesmo sob um caminho base de subdiretório.
-- [ ] A página lista exatamente os cinco comandos pedidos — `git clone`, `git add -A`, `git commit -m`, `git pull` e `git push` — cada um com uma finalidade curta e um exemplo adaptável à prática descrita na especificação.
+- [ ] A página lista os seis comandos pedidos, incluindo o `git branch` acrescentado depois — `git clone`, `git branch`, `git add -A`, `git commit -m`, `git pull` e `git push` — cada um com uma finalidade curta e um exemplo adaptável à prática descrita na especificação.
 - [ ] O exemplo de `git push` mostra a primeira publicação da branch com `-u origin`; o de `git commit -m` usa uma mensagem curta. Uma nota separada diz que `git add -A` prepara o arquivo e `git commit -m` registra o que foi preparado.
 - [ ] Em largura de celular, comandos, explicações e exemplos permanecem legíveis sem rolagem horizontal do layout; a página não inclui busca, filtros, formulário ou JavaScript de aplicação.
