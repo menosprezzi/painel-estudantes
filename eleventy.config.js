@@ -6,6 +6,15 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/fonts");
 
+  eleventyConfig.addCollection("estudantes", (collectionApi) =>
+    collectionApi.getFilteredByGlob("./src/estudantes/*.md"),
+  );
+
+  // Student introductions support Markdown, while raw HTML is escaped.
+  eleventyConfig.amendLibrary("md", (markdownLibrary) => {
+    markdownLibrary.set({ html: false });
+  });
+
   return {
     dir: {
       input: "src",
@@ -13,7 +22,8 @@ export default function (eleventyConfig) {
     },
     templateFormats: ["njk", "md"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
+    // Student Markdown must remain content, without executing Nunjucks.
+    markdownTemplateEngine: false,
     pathPrefix,
   };
 }

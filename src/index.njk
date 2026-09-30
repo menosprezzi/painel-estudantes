@@ -19,10 +19,35 @@ permalink: index.html
     <main>
       <h1>Painel de estudantes</h1>
       <p>Cada card representa uma contribuição individual no workshop de Git e GitHub. Conheça quem participou, seus interesses e sua música favorita.</p>
-      <section aria-labelledby="estado-vazio">
+      {% if collections.estudantes.length %}
+      <section class="student-grid" aria-label="Estudantes">
+        {% for estudante in collections.estudantes %}
+        <article class="student-card" aria-labelledby="estudante-{{ loop.index }}">
+          <h2 class="student-card__name" id="estudante-{{ loop.index }}">{{ estudante.data.nome | escape }}</h2>
+          <dl class="student-card__details">
+            <div>
+              <dt>Curso</dt>
+              <dd>{{ estudante.data.curso | escape }}</dd>
+            </div>
+            <div>
+              <dt>Ano do curso</dt>
+              <dd>{{ estudante.data.ano | escape }}</dd>
+            </div>
+          </dl>
+          <div class="student-card__presentation">
+            <h3>Apresentação e interesses</h3>
+            {{ estudante.templateContent | safe }}
+          </div>
+          <p class="student-card__music"><strong>Banda ou gênero musical favorito:</strong> {{ estudante.data.musica | escape }}</p>
+        </article>
+        {% endfor %}
+      </section>
+      {% else %}
+      <section class="empty-state" aria-labelledby="estado-vazio">
         <h2 id="estado-vazio">As primeiras contribuições estão chegando</h2>
         <p>Quando os estudantes adicionarem seus arquivos Markdown e seus Pull Requests forem mesclados, os cards aparecerão aqui.</p>
       </section>
+      {% endif %}
     </main>
   </body>
 </html>
