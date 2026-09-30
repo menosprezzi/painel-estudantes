@@ -66,6 +66,32 @@ body {
   overflow-wrap: anywhere;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  @keyframes page-fade-out {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes page-fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  ::view-transition-old(root) {
+    animation: 180ms ease-in both page-fade-out;
+  }
+
+  ::view-transition-new(root) {
+    animation: 180ms ease-in both page-fade-in;
+  }
+}
+
 :where(h1, h2, h3, h4, h5, h6) {
   margin: 0;
   color: var(--ink);
