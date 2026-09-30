@@ -1,7 +1,7 @@
 ---
 title: Git Cheat-sheet
 layout: base.njk
-description: Consulte os seis comandos de Git usados durante a prática do workshop.
+description: Consulte os sete comandos de Git usados durante a prática do workshop.
 pageId: git-cheatsheet
 permalink: git-cheatsheet/index.html
 ---
@@ -27,6 +27,11 @@ permalink: git-cheatsheet/index.html
 git switch feat/ISSUE_ID-SEU_USUARIO-card</code></pre>
     <p>Se preferir fazer as duas etapas de uma vez, <code>git checkout -b</code> cria a branch e já muda para ela:</p>
     <pre><code>git checkout -b feat/ISSUE_ID-SEU_USUARIO-card</code></pre>
+  </article>
+  <article class="command-entry" aria-labelledby="git-status">
+    <h2 id="git-status">{{ icon('terminal') }}<code>git status</code></h2>
+    <p>Mostra o que mudou na branch atual: arquivos novos, arquivos modificados e alterações já preparadas para o próximo commit. Use antes e depois de <code>git add -A</code> para acompanhar o que será registrado.</p>
+    <pre><code>git status</code></pre>
   </article>
   <article class="command-entry" aria-labelledby="git-add">
     <h2 id="git-add">{{ icon('plus') }}<code>git add -A</code></h2>
