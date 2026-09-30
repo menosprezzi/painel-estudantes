@@ -5,6 +5,7 @@ const pathPrefix = `/${(process.env.ELEVENTY_PATH_PREFIX ?? "")
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.ignores.add("src/fonts/README.md");
 
   eleventyConfig.addCollection("estudantes", (collectionApi) =>
     collectionApi.getFilteredByGlob("./src/estudantes/*.md"),

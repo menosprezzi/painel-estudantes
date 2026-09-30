@@ -7,7 +7,7 @@ permalink: git-cheatsheet/index.html
 ---
 {% from "icons.njk" import icon %}
 <h1>Git Cheat-sheet</h1>
-<p>Consulte os comandos usados na prática com o repositório <a href="https://github.com/menosprezzi/painel-estudantes">menosprezzi/painel-estudantes</a>. Adapte o nome da branch nos exemplos.</p>
+<p>Consulte os comandos usados na prática com o repositório <a href="https://github.com/menosprezzi/painel-estudantes">menosprezzi/painel-estudantes</a>. Nas branches, substitua <code>ISSUE_ID</code> pelo número da sua issue (sem <code>#</code>) e <code>SEU_USUARIO</code> pelo seu usuário do GitHub.</p>
 
 <aside class="command-note" aria-labelledby="preparar-e-registrar">
   <h2 id="preparar-e-registrar">Preparar e registrar são etapas separadas</h2>
@@ -23,10 +23,10 @@ permalink: git-cheatsheet/index.html
   <article class="command-entry" aria-labelledby="git-branch">
     <h2 id="git-branch">{{ icon('git-branch') }}<code>git branch</code></h2>
     <p><code>git branch</code> cria a branch para o seu card, mas você continua na branch atual. Use <code>git switch</code> para entrar na nova branch antes de editar o Markdown.</p>
-    <pre><code>git branch feat/SEU_USUARIO-card
-git switch feat/SEU_USUARIO-card</code></pre>
+    <pre><code>git branch feat/ISSUE_ID-SEU_USUARIO-card
+git switch feat/ISSUE_ID-SEU_USUARIO-card</code></pre>
     <p>Se preferir fazer as duas etapas de uma vez, <code>git checkout -b</code> cria a branch e já muda para ela:</p>
-    <pre><code>git checkout -b feat/SEU_USUARIO-card</code></pre>
+    <pre><code>git checkout -b feat/ISSUE_ID-SEU_USUARIO-card</code></pre>
   </article>
   <article class="command-entry" aria-labelledby="git-add">
     <h2 id="git-add">{{ icon('plus') }}<code>git add -A</code></h2>
@@ -46,7 +46,7 @@ git switch feat/SEU_USUARIO-card</code></pre>
   <article class="command-entry" aria-labelledby="git-push">
     <h2 id="git-push">{{ icon('upload') }}<code>git push</code></h2>
     <p>Envia os commits locais para o repositório remoto. Na primeira publicação da branch, use <code>-u</code> para criar o vínculo entre a branch local e a remota:</p>
-    <pre><code>git push -u origin feat/SEU_USUARIO-card</code></pre>
+    <pre><code>git push -u origin feat/ISSUE_ID-SEU_USUARIO-card</code></pre>
     <p>Depois que a branch estiver no remoto e esse vínculo estiver criado, use apenas <code>git push</code> para enviar os próximos commits. Não é necessário repetir <code>-u origin</code> nem o nome da branch:</p>
     <pre><code>git push</code></pre>
   </article>

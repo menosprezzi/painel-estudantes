@@ -31,10 +31,12 @@ Os quatro campos são obrigatórios. Escreva sua apresentação no corpo Markdow
 
 ## Checklist — siga em ordem
 
-- [ ] Atualize sua branch `main` local (`git switch main` e `git pull`) e crie sua branch própria (`git switch -c feat/SEU_USUARIO-card`).
+Use o padrão `feat/ISSUE_ID-SEU_USUARIO-card`: substitua `ISSUE_ID` pelo número desta issue (sem `#`) e `SEU_USUARIO` pelo seu usuário do GitHub.
+
+- [ ] Atualize sua branch `main` local (`git switch main` e `git pull`) e crie sua branch própria (`git switch -c feat/ISSUE_ID-SEU_USUARIO-card`).
 - [ ] Crie e preencha somente `src/estudantes/SEU_USUARIO.md`.
 - [ ] Prepare a alteração (`git add -A`) e depois registre-a (`git commit -m "feat: adiciona meu card"`). São duas etapas separadas.
-- [ ] Envie sua branch (`git push -u origin feat/SEU_USUARIO-card`).
+- [ ] Envie sua branch (`git push -u origin feat/ISSUE_ID-SEU_USUARIO-card`).
 - [ ] Abra um Pull Request (PR) para `main` e inclua `Closes #<número desta issue>` na descrição para vinculá-lo a esta issue.
 - [ ] Peça à sua dupla para revisar seu PR; cada estudante abre seu próprio PR e revisa o PR da dupla.
 - [ ] Após a aprovação, combine o merge do PR com a dupla ou com o facilitador.

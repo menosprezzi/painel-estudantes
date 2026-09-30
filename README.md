@@ -40,10 +40,10 @@ O campo `nome` é como você escolhe ser apresentado publicamente. Não precisa 
 
 1. Abra sua issue de contribuição e leia o checklist. Cada pessoa trabalha no repositório central, sem fork.
 2. Atualize sua cópia local antes de começar: `git switch main` e `git pull`.
-3. Crie sua branch com um nome único, por exemplo `feat/SEU_USUARIO-card`: `git switch -c feat/SEU_USUARIO-card`.
+3. Crie sua branch no padrão `feat/ISSUE_ID-SEU_USUARIO-card`, substituindo `ISSUE_ID` pelo número da sua issue (sem `#`) e `SEU_USUARIO` pelo seu usuário do GitHub: `git switch -c feat/ISSUE_ID-SEU_USUARIO-card`.
 4. Crie e preencha apenas `src/estudantes/SEU_USUARIO.md`.
 5. Prepare e registre a alteração, em etapas separadas: `git add -A` e `git commit -m "feat: adiciona meu card"`.
-6. Envie sua branch ao repositório: `git push -u origin feat/SEU_USUARIO-card`.
+6. Envie sua branch ao repositório: `git push -u origin feat/ISSUE_ID-SEU_USUARIO-card`.
 7. Abra um PR para `main`, vincule-o à sua issue e peça à sua dupla para revisar. Cada estudante abre seu próprio PR e também revisa o PR da dupla.
 8. Depois da aprovação, o PR pode ser mesclado à `main`.
 
