@@ -125,6 +125,14 @@ body {
   height: auto;
 }
 
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex: none;
+  vertical-align: middle;
+}
+
 :where(code, pre) {
   font-family: var(--font-mono);
   font-size: 0.9em;
@@ -154,6 +162,7 @@ body > header nav {
 body > header nav a {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   min-height: 64px;
   padding-block: 12px;
   border-bottom: 2px solid transparent;
@@ -215,7 +224,14 @@ main > p {
 }
 
 .student-card__name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   font-size: 21px;
+}
+
+.student-card__name .icon {
+  color: var(--brand-primary);
 }
 
 .student-card__details {
@@ -225,9 +241,18 @@ main > p {
 }
 
 .student-card__details dt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.4;
+}
+
+.student-card__details dt .icon,
+.student-card__music .icon {
+  width: 15px;
+  height: 15px;
 }
 
 .student-card__details dd {
@@ -269,7 +294,9 @@ main > p {
 }
 
 .student-card__music strong {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin-bottom: 4px;
   color: var(--ink);
   font-size: 12px;
@@ -329,8 +356,15 @@ main > p {
 }
 
 .command-entry h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 22px;
   letter-spacing: 0;
+}
+
+.command-entry h2 .icon {
+  color: var(--brand-primary);
 }
 
 .command-entry p {

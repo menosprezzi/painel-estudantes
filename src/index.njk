@@ -5,20 +5,21 @@ description: Conheça as contribuições dos estudantes do workshop de Git e Git
 pageId: estudantes
 permalink: index.html
 ---
+{% from "icons.njk" import icon %}
       <h1>Painel de estudantes</h1>
       <p>Cada card representa uma contribuição individual no workshop de Git e GitHub. Conheça quem participou, seus interesses e sua música favorita.</p>
       {% if collections.estudantes.length %}
       <section class="student-grid" aria-label="Estudantes">
         {% for estudante in collections.estudantes %}
         <article class="student-card" aria-labelledby="estudante-{{ loop.index }}">
-          <h2 class="student-card__name" id="estudante-{{ loop.index }}">{{ estudante.data.nome | escape }}</h2>
+          <h2 class="student-card__name" id="estudante-{{ loop.index }}">{{ icon('users') }}<span>{{ estudante.data.nome | escape }}</span></h2>
           <dl class="student-card__details">
             <div>
-              <dt>Curso</dt>
+              <dt>{{ icon('code') }}<span>Curso</span></dt>
               <dd>{{ estudante.data.curso | escape }}</dd>
             </div>
             <div>
-              <dt>Ano do curso</dt>
+              <dt>{{ icon('calendar') }}<span>Ano do curso</span></dt>
               <dd>{{ estudante.data.ano | escape }}</dd>
             </div>
           </dl>
@@ -26,7 +27,7 @@ permalink: index.html
             <h3>Apresentação e interesses</h3>
             {{ estudante.templateContent | safe }}
           </div>
-          <p class="student-card__music"><strong>Banda ou gênero musical favorito:</strong> {{ estudante.data.musica | escape }}</p>
+          <p class="student-card__music"><strong>{{ icon('music') }}<span>Banda ou gênero musical favorito:</span></strong> {{ estudante.data.musica | escape }}</p>
         </article>
         {% endfor %}
       </section>

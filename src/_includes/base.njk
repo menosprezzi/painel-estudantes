@@ -1,4 +1,5 @@
 <!doctype html>
+{% from "icons.njk" import icon %}
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
@@ -10,8 +11,8 @@
   <body>
     <header>
       <nav aria-label="Navegação principal">
-        <a href="{{ '/' | url }}"{% if pageId == 'estudantes' %} aria-current="page"{% endif %}>Estudantes</a>
-        <a href="{{ '/git-cheatsheet/' | url }}"{% if pageId == 'git-cheatsheet' %} aria-current="page"{% endif %}>Git Cheat-sheet</a>
+        <a href="{{ '/' | url }}"{% if pageId == 'estudantes' %} aria-current="page"{% endif %}>{{ icon('users') }}<span>Estudantes</span></a>
+        <a href="{{ '/git-cheatsheet/' | url }}"{% if pageId == 'git-cheatsheet' %} aria-current="page"{% endif %}>{{ icon('terminal') }}<span>Git Cheat-sheet</span></a>
       </nav>
     </header>
     <main>
