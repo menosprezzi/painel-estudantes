@@ -1,7 +1,7 @@
 ---
 title: Git Cheat-sheet
 layout: base.njk
-description: Consulte os cinco comandos de Git usados durante a prática do workshop.
+description: Consulte os seis comandos de Git usados durante a prática do workshop.
 pageId: git-cheatsheet
 permalink: git-cheatsheet/index.html
 ---
@@ -18,6 +18,12 @@ permalink: git-cheatsheet/index.html
     <h2 id="git-clone"><code>git clone</code></h2>
     <p>Copia o repositório central para o computador.</p>
     <pre><code>git clone URL_DO_REPOSITORIO</code></pre>
+  </article>
+  <article class="command-entry" aria-labelledby="git-branch">
+    <h2 id="git-branch"><code>git branch</code></h2>
+    <p>Cria uma branch para o seu card. Depois, entre nela antes de editar o Markdown.</p>
+    <pre><code>git branch feat/SEU_USUARIO-card
+git switch feat/SEU_USUARIO-card</code></pre>
   </article>
   <article class="command-entry" aria-labelledby="git-add">
     <h2 id="git-add"><code>git add -A</code></h2>
