@@ -4,7 +4,7 @@
 
 **Blocked by:** 02 — Transformar cada Markdown individual em um card. **Pré-requisito externo para a fonte exata:** obter arquivos web de Host Grotesk com direito de uso confirmado; eles não estão na pasta de identidade visual. A busca/obtenção pode ocorrer neste ticket, mas, se não for possível, registrar a pendência e manter fallback de sistema.
 
-**Status:** implemented-unverified (commit local `e56e575`)
+**Status:** implemented-unverified (commit local do ticket 03)
 
 **Modelo recomendado:** `gpt-6-astra`, reasoning `high` — a fidelidade à referência, tipografia e responsividade pedem julgamento visual cuidadoso.
 

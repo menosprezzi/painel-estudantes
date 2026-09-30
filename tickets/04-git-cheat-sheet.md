@@ -4,7 +4,7 @@
 
 **Blocked by:** 01 — Inicializar o repositório local e servir a página inicial; 03 — Aplicar a identidade Stribord aos cards responsivos, que estabelece a apresentação compartilhada da barra e do conteúdo.
 
-**Status:** implemented-unverified (commits locais `c1054c0` e `4120339`; extensão solicitada depois)
+**Status:** implemented-unverified (commit local do ticket 04 e extensão posterior para `git branch`)
 
 **Modelo recomendado:** `gpt-6.1-sol`, reasoning `medium` — a tarefa combina conteúdo técnico preciso com uma segunda rota e reutilização do visual existente.
 

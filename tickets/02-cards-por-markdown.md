@@ -4,7 +4,7 @@
 
 **Blocked by:** 01 — Inicializar o repositório local e servir a página inicial.
 
-**Status:** implemented-unverified (commit local `f46f8d3`)
+**Status:** implemented-unverified (commit local do ticket 02)
 
 **Modelo recomendado:** `gpt-6.1-sol`, reasoning `high` — a coleção, o front matter e a saída do Eleventy precisam concordar sem gerar páginas individuais por engano.
 

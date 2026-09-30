@@ -4,7 +4,7 @@
 
 **Blocked by:** 01 — Inicializar o repositório local e servir a página inicial. O script, diretório de saída e estratégia de caminho base precisam existir. O ticket 06 não bloqueia este workflow: CI de PR e deploy em `main` são arquivos independentes.
 
-**Status:** implemented-unverified (workflow no commit local `a474c44`; instrução remota no README)
+**Status:** implemented-unverified (workflow no commit local do ticket 07; instrução remota no README)
 
 **Modelo recomendado:** `gpt-6.1-sol`, reasoning `high` — permissões, dependência entre jobs, artefato e caminho base exigem cuidado para o Pages funcionar sob a URL futura.
 

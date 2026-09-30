@@ -4,7 +4,7 @@
 
 **Blocked by:** 01 — Inicializar o repositório local e servir a página inicial. A compilação Eleventy e o script de geração já precisam estar definidos.
 
-**Status:** implemented-unverified (commit local `55b185e`)
+**Status:** implemented-unverified (commit local do ticket 06)
 
 **Modelo recomendado:** `gpt-6.1-sol`, reasoning `medium` — requer um workflow GitHub Actions enxuto e alinhado ao script e lockfile do projeto.
 

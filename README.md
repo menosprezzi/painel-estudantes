@@ -51,6 +51,10 @@ Consulte o Git Cheat-sheet pela barra superior do site (rota `/git-cheatsheet/`)
 
 **Sua atividade individual termina quando seu PR é aprovado e mesclado à `main`.** A publicação do site pode levar mais tempo; você não precisa esperar pelo deploy. Os cards publicados podem ser vistos em conjunto no encerramento.
 
+### Convenção de commits
+
+Use o formato Conventional Commits: `tipo(escopo opcional): descrição curta`. Escreva a descrição em minúsculas e sem ponto final. Para seu card, use `feat: adiciona meu card`. No histórico do projeto, `feat` identifica funcionalidades, `fix` correções, `docs` documentação, `style` mudanças visuais, `ci` automações e `chore` manutenção. O escopo pode indicar a área ou o ticket, como em `feat(ticket-04): oferecer página git cheat-sheet`.
+
 ## Para o facilitador
 
 O exercício foi planejado para aproximadamente 30 estudantes em duplas ao longo de 90 minutos. A contribuição de cada estudante fica em um Markdown exclusivo para reduzir conflitos durante o trabalho simultâneo. A dupla revisa o PR da outra pessoa; o facilitador apoia a abertura de issues, a revisão e o merge.

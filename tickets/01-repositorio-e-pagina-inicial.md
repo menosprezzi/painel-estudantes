@@ -4,7 +4,7 @@
 
 **Blocked by:** None (can start immediately).
 
-**Status:** implemented-unverified (commit local `434b5ac`)
+**Status:** implemented-unverified (commit local do ticket 01)
 
 **Modelo recomendado:** `gpt-6.1-sol`, reasoning `medium` — coordena configuração Eleventy, estrutura de saída e histórico Git local com escopo pequeno.
 
