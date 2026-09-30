@@ -1,23 +1,10 @@
 ---
 title: Estudantes
+layout: base.njk
+description: Conheça as contribuições dos estudantes do workshop de Git e GitHub.
+pageId: estudantes
 permalink: index.html
 ---
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Conheça as contribuições dos estudantes do workshop de Git e GitHub.">
-    <link rel="stylesheet" href="{{ '/styles.css' | url }}">
-    <title>{{ title }} · Workshop Git e GitHub</title>
-  </head>
-  <body>
-    <header>
-      <nav aria-label="Navegação principal">
-        <a href="{{ '/' | url }}" aria-current="page">Estudantes</a>
-      </nav>
-    </header>
-    <main>
       <h1>Painel de estudantes</h1>
       <p>Cada card representa uma contribuição individual no workshop de Git e GitHub. Conheça quem participou, seus interesses e sua música favorita.</p>
       {% if collections.estudantes.length %}
@@ -49,6 +36,3 @@ permalink: index.html
         <p>Quando os estudantes adicionarem seus arquivos Markdown e seus Pull Requests forem mesclados, os cards aparecerão aqui.</p>
       </section>
       {% endif %}
-    </main>
-  </body>
-</html>

@@ -266,6 +266,71 @@ main > p {
   margin-top: 12px;
 }
 
+.command-note,
+.command-list,
+.command-guide {
+  max-width: 800px;
+}
+
+.command-note {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--brand-primary);
+  border-radius: var(--radius-card);
+}
+
+.command-note h2 {
+  font-size: 18px;
+}
+
+.command-note p {
+  margin-top: 10px;
+}
+
+.command-list {
+  margin-top: 40px;
+}
+
+.command-entry {
+  min-width: 0;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.command-entry:first-child {
+  padding-top: 0;
+}
+
+.command-entry h2 {
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.command-entry p {
+  margin-top: 12px;
+}
+
+.command-entry pre {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  color: var(--ink);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.command-entry pre code {
+  font-size: inherit;
+}
+
+main > .command-guide {
+  margin-top: 24px;
+  font-size: 15px;
+}
+
 @media (min-width: 640px) {
   .student-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

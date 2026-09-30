@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description | escape }}">
+    <link rel="stylesheet" href="{{ '/styles.css' | url }}">
+    <title>{{ title | escape }} · Workshop Git e GitHub</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Navegação principal">
+        <a href="{{ '/' | url }}"{% if pageId == 'estudantes' %} aria-current="page"{% endif %}>Estudantes</a>
+        <a href="{{ '/git-cheatsheet/' | url }}"{% if pageId == 'git-cheatsheet' %} aria-current="page"{% endif %}>Git Cheat-sheet</a>
+      </nav>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
