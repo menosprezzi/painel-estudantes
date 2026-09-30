@@ -1,6 +1,6 @@
 # Painel de estudantes
 
-Site estático do workshop de 90 minutos sobre Git e GitHub. Cerca de 30 estudantes contribuem com um card próprio e praticam colaboração por issues, branches e Pull Requests (PRs). O repositório será público para consulta e portfólio; cada pessoa escolhe como quer aparecer publicamente no card.
+Site estático do workshop de 90 minutos sobre Git e GitHub. Cerca de 30 estudantes contribuem com um card próprio e praticam colaboração por issues, branches e Pull Requests (PRs). O [repositório é público](https://github.com/menosprezzi/painel-estudantes) para consulta e portfólio; cada pessoa escolhe como quer aparecer publicamente no card. A versão publicada está no [GitHub Pages](https://menosprezzi.github.io/painel-estudantes/).
 
 ## Executar localmente
 
@@ -63,8 +63,8 @@ O exercício foi planejado para aproximadamente 30 estudantes em duplas ao longo
 
 Com Node.js 20 ou superior instalado, rode `npm ci` uma vez e `npm run dev` para apresentar e editar o painel localmente. `npm run build` gera a versão estática em `_site/`. O script `dev` inicia o servidor do Eleventy; `build` compila as páginas.
 
-### Preparação remota futura
+### Configuração do repositório no GitHub
 
-Estas configurações pertencem à etapa em que o repositório GitHub público for criado; não são feitas neste projeto local. Nas regras da branch `main`, exigir PR, uma aprovação e CI verde antes do merge. Não exigir que a branch do PR esteja atualizada com `main`, para evitar trabalho adicional de integração durante a atividade. Permitir que o facilitador contorne a regra em uma emergência.
+O repositório público usa `main` como branch padrão. Nas regras dessa branch, exigir PR, uma aprovação e CI verde antes do merge. Não exigir que a branch do PR esteja atualizada com `main`, para evitar trabalho adicional de integração durante a atividade. Permitir que o facilitador contorne a regra em uma emergência.
 
-Para publicar com GitHub Pages, configure depois **Settings → Pages → Build and deployment → Source: GitHub Actions**. O workflow de deploy usa `actions/configure-pages` para descobrir a URL e definir o `base_path` do Pages; assim, os caminhos dos assets podem ser ajustados ao proprietário e nome finais do repositório, sem fixar aqui uma URL presumida. O fluxo publica o artefato estático após o merge em `main`. Não é necessário criar uma branch `gh-pages` nem adicionar credenciais de publicação manual.
+Em **Settings → Pages → Build and deployment**, a origem selecionada é **GitHub Actions**. O workflow de deploy usa `actions/configure-pages` para descobrir a URL e definir o `base_path` do Pages; assim, a navegação e os assets funcionam no endereço do projeto. Cada push ou merge em `main` publica o artefato estático. Não é necessário criar uma branch `gh-pages` nem adicionar credenciais de publicação manual.
