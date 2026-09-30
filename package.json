@@ -1,0 +1,17 @@
+{
+  "name": "painel-estudantes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Painel de contribuições dos estudantes do workshop de Git e GitHub.",
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.2"
+  }
+}
