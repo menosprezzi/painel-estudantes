@@ -8,7 +8,7 @@ assignees: ""
 
 ## Objetivo
 
-Adicionar meu card ao painel por meio de um arquivo Markdown individual. Vou trabalhar no repositório central, sem fork, e editar somente meu arquivo em `src/estudantes/`.
+Adicionar meu card ao painel por meio de um arquivo Markdown individual. Vou trabalhar no [repositório central](https://github.com/menosprezzi/painel-estudantes), sem fork, e editar somente meu arquivo em `src/estudantes/`.
 
 O nome público do card é uma escolha minha. Não é necessário usar nome completo nem um apelido específico.
 
@@ -31,7 +31,6 @@ Os quatro campos são obrigatórios. Escreva sua apresentação no corpo Markdow
 
 ## Checklist — siga em ordem
 
-- [ ] Confirme com o facilitador a URL do repositório e abra uma issue para sua contribuição.
 - [ ] Atualize sua branch `main` local (`git switch main` e `git pull`) e crie sua branch própria (`git switch -c feat/SEU_USUARIO-card`).
 - [ ] Crie e preencha somente `src/estudantes/SEU_USUARIO.md`.
 - [ ] Prepare a alteração (`git add -A`) e depois registre-a (`git commit -m "feat: adiciona meu card"`). São duas etapas separadas.
