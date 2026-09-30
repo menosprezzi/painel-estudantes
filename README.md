@@ -51,9 +51,22 @@ Consulte o Git Cheat-sheet pela barra superior do site (rota `/git-cheatsheet/`)
 
 **Sua atividade individual termina quando seu PR é aprovado e mesclado à `main`.** A publicação do site pode levar mais tempo; você não precisa esperar pelo deploy. Os cards publicados podem ser vistos em conjunto no encerramento.
 
-### Convenção de commits
+### Convenções de commits e branches
 
-Use o formato Conventional Commits: `tipo(escopo opcional): descrição curta`. Escreva a descrição em minúsculas e sem ponto final. Para seu card, use `feat: adiciona meu card`. No histórico do projeto, `feat` identifica funcionalidades, `fix` correções, `docs` documentação, `style` mudanças visuais, `ci` automações e `chore` manutenção. O escopo pode indicar a área ou o ticket, como em `feat(ticket-04): oferecer página git cheat-sheet`.
+**Mensagem de commit:** siga o formato Conventional Commits, `tipo(escopo opcional): descrição curta`. Use um verbo no presente, escreva a descrição em minúsculas e não coloque ponto final. O escopo, quando útil, identifica a parte alterada. Exemplos: `feat: adiciona card de estudante` e `docs(readme): explica o fluxo de contribuição`.
+
+| Tipo | Quando usar |
+| --- | --- |
+| `feat` | Nova funcionalidade ou conteúdo do painel |
+| `fix` | Correção de comportamento ou conteúdo |
+| `docs` | Documentação e instruções |
+| `style` | Alteração visual sem mudar o comportamento |
+| `ci` | Workflows e automações de integração ou publicação |
+| `chore` | Manutenção do projeto |
+
+**Nome de branch:** use `<tipo>/<issue_id>-<breve_descrição>`. O `tipo` segue a mesma lista dos commits; `issue_id` é o número da issue, sem `#`; e `breve_descrição` resume a tarefa em palavras minúsculas separadas por hífens. Por exemplo, para a issue `#12`: `feat/12-card-estudante`. Crie uma branch por issue.
+
+Esses nomes mostram a finalidade da mudança antes mesmo de abrir o PR. O número no nome da branch ajuda a localizar a issue correspondente; o tipo e a descrição tornam branches e commits fáceis de buscar e entender no histórico. Isso dá rastreabilidade entre tarefa, código e revisão e facilita futuras automações. Quando a mudança resolver uma issue, inclua `Closes #12` no corpo do commit e na descrição do PR, substituindo `12` pelo número real.
 
 ## Para o facilitador
 
