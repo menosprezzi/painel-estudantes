@@ -22,9 +22,11 @@ permalink: git-cheatsheet/index.html
   </article>
   <article class="command-entry" aria-labelledby="git-branch">
     <h2 id="git-branch">{{ icon('git-branch') }}<code>git branch</code></h2>
-    <p>Cria uma branch para o seu card. Depois, entre nela antes de editar o Markdown.</p>
+    <p><code>git branch</code> cria a branch para o seu card, mas você continua na branch atual. Use <code>git switch</code> para entrar na nova branch antes de editar o Markdown.</p>
     <pre><code>git branch feat/SEU_USUARIO-card
 git switch feat/SEU_USUARIO-card</code></pre>
+    <p>Se preferir fazer as duas etapas de uma vez, <code>git checkout -b</code> cria a branch e já muda para ela:</p>
+    <pre><code>git checkout -b feat/SEU_USUARIO-card</code></pre>
   </article>
   <article class="command-entry" aria-labelledby="git-add">
     <h2 id="git-add">{{ icon('plus') }}<code>git add -A</code></h2>
@@ -43,8 +45,10 @@ git switch feat/SEU_USUARIO-card</code></pre>
   </article>
   <article class="command-entry" aria-labelledby="git-push">
     <h2 id="git-push">{{ icon('upload') }}<code>git push</code></h2>
-    <p>Envia os commits locais para o remoto. Na primeira publicação da branch, estabelece o vínculo com <code>-u</code>.</p>
+    <p>Envia os commits locais para o repositório remoto. Na primeira publicação da branch, use <code>-u</code> para criar o vínculo entre a branch local e a remota:</p>
     <pre><code>git push -u origin feat/SEU_USUARIO-card</code></pre>
+    <p>Depois que a branch estiver no remoto e esse vínculo estiver criado, use apenas <code>git push</code> para enviar os próximos commits. Não é necessário repetir <code>-u origin</code> nem o nome da branch:</p>
+    <pre><code>git push</code></pre>
   </article>
 </section>
 
